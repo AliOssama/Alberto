@@ -4,8 +4,18 @@
     <ul>
       <li> Using moving average: Also called moving mean or rolling mean and it uses averages of different subsets of data. By graphing
       these averages, we solve seasonality and noise problems. </li>
+      <br>
+      <br>
+      <br>
       <button onclick="picture()">Moving average graph</button>
-      <img id="bigpic" src="moving average.jpeg" style="display:none;"/>
+      <img id="average" src="moving average.jpeg" style="display:none;"/>
+      <br>
+      <br>
+      <br>
+      <li> Using seasonal subseries chart: This is used by extracting a series from the big data. It helps focus on the trends within a 
+        smaller scale so it helps solving any problems with unclear trends or any noise problems. </li>
+      <button onclick="picture2()">Seasonal subseries graph</button>
+      <img id="season" src="seasonal.png" style="display:none;"/>
       
       
       
@@ -13,7 +23,10 @@
 
         function picture(){ 
           var pic = "moving average.jpeg"
-          document.getElementById('bigpic').style.display='block';
-
+          document.getElementById('average').style.display='block';
+        }
+         function picture2(){ 
+          var pic = "moving average.jpeg"
+          document.getElementById('season').style.display='block';
         }
         </script> 
